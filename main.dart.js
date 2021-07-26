@@ -34833,7 +34833,7 @@ return M.a6P(new P.v(4280554695),M.by(f,T.qu(H.b([a0,new T.dM(C.bc,f,f,a1,f),a2,
 b7(){var s,r,q=null
 this.bB()
 $.hK=null
-s=new V.EE("assets/videos/beer-animation-glass.mp4",new V.vk(C.p,C.p,C.er,C.iu,!1,!1,!1,1,1,q,C.x,!1),P.al(0,q,!1,t.Y))
+s=new V.EE("assets/videos/trans-beer-animation.webm",new V.vk(C.p,C.p,C.er,C.iu,!1,!1,!1,1,1,q,C.x,!1),P.al(0,q,!1,t.Y))
 $.hK=s
 s.fp(0)
 $.hK.h9(!1)
@@ -34952,7 +34952,7 @@ F.a00.prototype={
 $0(){F.a3T()
 var s=this.a.c
 s.toString
-K.BG(s,"/lost",t._)
+K.BG(s,"/you-lost",t._)
 this.b.aB(0)},
 $S:2}
 F.a01.prototype={
