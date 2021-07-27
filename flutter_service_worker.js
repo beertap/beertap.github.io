@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "0db2aec68b6ae66200dad8574e40ac10",
+  "assets/AssetManifest.json": "08c7bf96b6fa08f29bfc66bb2152e817",
 "assets/assets/fonts/Baloo-Chettan-Regular.ttf": "a67ee72b54a03d425eb928e92702f54f",
 "assets/assets/images/beer-gfx.png": "bda320d95aa680fa71bfe09d388eb875",
 "assets/assets/images/beerCounter.png": "bfa46ccd39b978f2d613b7357006145f",
@@ -11,9 +11,9 @@ const RESOURCES = {
 "assets/assets/images/main-menu/background.png": "1a2cc28fe8147706d2ffd3d694304f88",
 "assets/assets/images/pause.png": "f8e2b53c83ac138a04cae36b7538ea81",
 "assets/assets/images/you-lost.png": "37ca9470c721e99a61b887ef59739a67",
+"assets/assets/videos/beer-animation-glass.mp4": "5387543fcb31e92c7ed19f0f26649f9e",
 "assets/assets/videos/beer-video-2.gif": "1f15f61520c5806b51d30b43ff0bb744",
 "assets/assets/videos/beer-video.gif": "1f15f61520c5806b51d30b43ff0bb744",
-"assets/assets/videos/trans-beer-animation.webm": "e970c070c052b53cd11fde229cfd32e0",
 "assets/FontManifest.json": "44ce53071865a00708e0c6fb4344e06c",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/NOTICES": "254da9b4994a4918bbc75bb6340184c1",
@@ -24,9 +24,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "fa36c2f3bddbbaba4f669538c20ea93d",
-"/": "fa36c2f3bddbbaba4f669538c20ea93d",
-"main.dart.js": "98b89f0bf483d015e4828efcea550387",
+"index.html": "08edad02e9b7fe5e4375634c9675e068",
+"/": "08edad02e9b7fe5e4375634c9675e068",
+"main.dart.js": "6b6828430f11ec828fe176d92c18bfb1",
 "manifest.json": "a052fc08a99c772d81e2370b55397ace",
 "version.json": "385322a4d28377929e2956a612f877b4"
 };
