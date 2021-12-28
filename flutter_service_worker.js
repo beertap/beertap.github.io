@@ -3,8 +3,9 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "08c7bf96b6fa08f29bfc66bb2152e817",
+  "assets/AssetManifest.json": "da3c2372da5331419278c12263a721ed",
 "assets/assets/fonts/Baloo-Chettan-Regular.ttf": "a67ee72b54a03d425eb928e92702f54f",
+"assets/assets/images/arrow-left.png": "99ee2f6ad153bf530a24ff3bd2db04e3",
 "assets/assets/images/beer-gfx.png": "bda320d95aa680fa71bfe09d388eb875",
 "assets/assets/images/beerCounter.png": "bfa46ccd39b978f2d613b7357006145f",
 "assets/assets/images/beertap-logo.png": "ef921a8e24429e84458d74efd127fb56",
@@ -12,23 +13,26 @@ const RESOURCES = {
 "assets/assets/images/pause.png": "f8e2b53c83ac138a04cae36b7538ea81",
 "assets/assets/images/you-lost.png": "37ca9470c721e99a61b887ef59739a67",
 "assets/assets/videos/beer-animation-glass.mp4": "5387543fcb31e92c7ed19f0f26649f9e",
-"assets/assets/videos/beer-video-2.gif": "1f15f61520c5806b51d30b43ff0bb744",
-"assets/assets/videos/beer-video.gif": "1f15f61520c5806b51d30b43ff0bb744",
+"assets/assets/videos/beer-animation-glass.webm": "3ea107a6abb8c83bb30d00fda3079656",
 "assets/FontManifest.json": "44ce53071865a00708e0c6fb4344e06c",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "254da9b4994a4918bbc75bb6340184c1",
+"assets/NOTICES": "9fd2c54096577f3dd2af445b9261496a",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"canvaskit/canvaskit.js": "43fa9e17039a625450b6aba93baf521e",
+"canvaskit/canvaskit.wasm": "04ed3c745ff1dee16504be01f9623498",
+"canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",
+"canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
 "favicon.ico": "1983a9e5dc51d44ac6c9c2c60e3baf61",
 "favicon.png": "9742921a852d4818ebfd2f3495766013",
 "icons/Icon-192.png": "3b563806524fd43b1107b750c3c102b6",
 "icons/Icon-512.png": "3b563806524fd43b1107b750c3c102b6",
 "icons/Icon-maskable-192.png": "3b563806524fd43b1107b750c3c102b6",
 "icons/Icon-maskable-512.png": "3b563806524fd43b1107b750c3c102b6",
-"index.html": "67bf0ffa9dd9588978f51ffcb950a928",
-"/": "67bf0ffa9dd9588978f51ffcb950a928",
-"main.dart.js": "f4a511b63ed522dfe2f15559d7124127",
+"index.html": "a3324ca3f3a5ea235a2f4e04ea1621f3",
+"/": "a3324ca3f3a5ea235a2f4e04ea1621f3",
+"main.dart.js": "304a097ccec088b2ec6753cd63248b8e",
 "manifest.json": "a052fc08a99c772d81e2370b55397ace",
-"version.json": "385322a4d28377929e2956a612f877b4"
+"version.json": "1c3ba6d973a11603a84deac549304799"
 };
 
 // The application shell files that are downloaded before a service worker can
