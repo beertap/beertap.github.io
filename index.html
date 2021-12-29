@@ -35,10 +35,10 @@
     }
   </style>
   <script>
-    window.onload = function disableChromeCastButton() {
-      var player = document.getElementsByTagName('video')[0];
-      player.disableRemotePlayback = true;
-    }
+    document.addEventListener("DOMContentLoaded", function(event){
+       var player = document.getElementsByTagName('video')[0];
+       player.disableRemotePlayback = true;
+    });
   </script>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
