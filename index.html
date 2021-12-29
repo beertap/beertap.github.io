@@ -36,8 +36,15 @@
   </style>
   <script>
     document.addEventListener("DOMContentLoaded", function(event){
-       var player = document.getElementsByTagName('video')[0];
-       player.disableRemotePlayback = true;
+      function disableChromeCast() {
+        var player = document.getElementsByTagName('video')[0];
+        player.disableRemotePlayback = true;
+      }    
+      // repeat with the interval of 2 seconds
+      let timerId = setInterval(() => disableChromeCast(), 2000);
+
+      // after 7 seconds stop
+      setTimeout(() => { clearInterval(timerId); disableChromeCast(); }, 7000); 
     });
   </script>
   <!-- This script installs service_worker.js to provide PWA functionality to
