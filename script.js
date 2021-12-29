@@ -1,6 +1,16 @@
 //js function in web/script.js file
-function showAlert(message) {
-    alert(message)
+
+function disableChromeCast(timerId, message) {
+	    console.log("scanning for video element..");
+        var player = document.getElementsByTagName('video')[0];
+        if (player != null) {
+          player.disableRemotePlayback = true;
+          clearInterval(timerId);
+          console.log(message);
+        }
 }
 
-//you can add more functions here.
+function disableChromeCastIcon(message) {
+    // scan for video element and repeat with the interval of 0.1 seconds
+    let timerId = setInterval(() => disableChromeCast(timerId, message), 100);
+}

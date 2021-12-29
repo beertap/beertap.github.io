@@ -34705,7 +34705,6 @@ $0(){$.y9=!$.y9},
 $S:2}
 A.a0b.prototype={
 $0(){var s,r
-$.kA().kq("showAlert",["This is alert message"])
 A.ks()
 s=$.LU
 if(!s||!$.y7||!$.y8||!$.y9){r=[]
@@ -34719,7 +34718,8 @@ $S:2}
 A.l3.prototype={
 aw(){return new A.Hj(null,B.m)}}
 A.Hj.prototype={
-aV(){this.uy("assets/videos/beer-animation-glass.webm")
+aV(){$.kA().kq("disableChromeCastIcon",["Succesfully removed Chromecast icon from video element"])
+this.uy("assets/videos/beer-animation-glass.webm")
 this.ux()
 A.ks()
 this.bq()},
