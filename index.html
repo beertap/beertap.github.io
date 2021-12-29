@@ -25,8 +25,9 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <title>beertap</title>
+  <title>Beertap</title>
   <link rel="manifest" href="manifest.json">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <style>
@@ -34,26 +35,11 @@
       display: none;
     }
   </style>
-  <script>
-    document.addEventListener("DOMContentLoaded", function(event){
-      function disableChromeCast(timerId) {
-	      console.log("looking for video element..");
-        var player = document.getElementsByTagName('video')[0];
-        if (player != null) {
-          player.disableRemotePlayback = true;
-          clearInterval(timerId);
-          console.log("Succesfully removed Chromecast icon from video element");
-        }
-      }    
-      // repeat with the interval of 2 seconds
-      let timerId = setInterval(() => disableChromeCast(timerId), 2000);
-  });
-  </script>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '1394276082';
+    var serviceWorkerVersion = '3544049318';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
