@@ -35,7 +35,19 @@
     }
   </style>
   <script>
-    
+    document.addEventListener("DOMContentLoaded", function(event){
+      function disableChromeCast(timerId) {
+	      console.log("looking for video element..");
+        var player = document.getElementsByTagName('video')[0];
+        if (player != null) {
+          player.disableRemotePlayback = true;
+          clearInterval(timerId);
+          console.log("Succesfully removed Chromecast icon from video element");
+        }
+      }    
+      // repeat with the interval of 2 seconds
+      let timerId = setInterval(() => disableChromeCast(timerId), 2000);
+  });
   </script>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
