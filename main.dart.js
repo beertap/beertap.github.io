@@ -34718,7 +34718,7 @@ $S:2}
 A.l2.prototype={
 aw(){return new A.Hj(null,B.m)}}
 A.Hj.prototype={
-aV(){this.uy("assets/videos/beer-animation-transparent.webm")
+aV(){this.uy("assets/videos/beer-animation-glass.webm")
 this.ux()
 A.ks()
 this.bq()},
