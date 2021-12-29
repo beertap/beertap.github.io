@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "da3c2372da5331419278c12263a721ed",
+  "assets/AssetManifest.json": "030fe319985c8eb58cd242fac1785068",
 "assets/assets/fonts/Baloo-Chettan-Regular.ttf": "a67ee72b54a03d425eb928e92702f54f",
 "assets/assets/images/arrow-left.png": "99ee2f6ad153bf530a24ff3bd2db04e3",
 "assets/assets/images/beer-gfx.png": "bda320d95aa680fa71bfe09d388eb875",
@@ -14,6 +14,7 @@ const RESOURCES = {
 "assets/assets/images/you-lost.png": "37ca9470c721e99a61b887ef59739a67",
 "assets/assets/videos/beer-animation-glass.mp4": "5387543fcb31e92c7ed19f0f26649f9e",
 "assets/assets/videos/beer-animation-glass.webm": "3ea107a6abb8c83bb30d00fda3079656",
+"assets/assets/videos/beer-animation-transparent.webm": "e970c070c052b53cd11fde229cfd32e0",
 "assets/FontManifest.json": "44ce53071865a00708e0c6fb4344e06c",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
 "assets/NOTICES": "9fd2c54096577f3dd2af445b9261496a",
@@ -24,9 +25,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "3b563806524fd43b1107b750c3c102b6",
 "icons/Icon-maskable-192.png": "3b563806524fd43b1107b750c3c102b6",
 "icons/Icon-maskable-512.png": "3b563806524fd43b1107b750c3c102b6",
-"index.html": "02a55bcd9df9dc58e956b5cb891bf0f5",
-"/": "02a55bcd9df9dc58e956b5cb891bf0f5",
-"main.dart.js": "5949e3cb01531f8c510a0b5dd8d3a39a",
+"index.html": "865e6b58f54cfff0a77e3f4244c2674e",
+"/": "865e6b58f54cfff0a77e3f4244c2674e",
+"main.dart.js": "aa89ed74777d77ef4544b82af72f0435",
 "manifest.json": "a052fc08a99c772d81e2370b55397ace",
 "version.json": "1c3ba6d973a11603a84deac549304799"
 };
