@@ -3,12 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "030fe319985c8eb58cd242fac1785068",
+  "assets/AssetManifest.json": "2e35b9c47dbc34a156db23d4938e8cee",
 "assets/assets/fonts/Baloo-Chettan-Regular.ttf": "a67ee72b54a03d425eb928e92702f54f",
 "assets/assets/images/arrow-left.png": "99ee2f6ad153bf530a24ff3bd2db04e3",
 "assets/assets/images/beer-gfx.png": "bda320d95aa680fa71bfe09d388eb875",
 "assets/assets/images/beerCounter.png": "bfa46ccd39b978f2d613b7357006145f",
 "assets/assets/images/beertap-logo.png": "ef921a8e24429e84458d74efd127fb56",
+"assets/assets/images/gear-icon.jpg": "38af34bbe1098d93f97328e409e361f2",
 "assets/assets/images/main-menu/background.png": "1a2cc28fe8147706d2ffd3d694304f88",
 "assets/assets/images/pause.png": "f8e2b53c83ac138a04cae36b7538ea81",
 "assets/assets/images/you-lost.png": "37ca9470c721e99a61b887ef59739a67",
@@ -16,18 +17,24 @@ const RESOURCES = {
 "assets/assets/videos/beer-animation-glass.webm": "3ea107a6abb8c83bb30d00fda3079656",
 "assets/assets/videos/beer-animation-transparent.webm": "e970c070c052b53cd11fde229cfd32e0",
 "assets/FontManifest.json": "44ce53071865a00708e0c6fb4344e06c",
-"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "9fd2c54096577f3dd2af445b9261496a",
+"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
+"assets/NOTICES": "53729b411e8fe2cf3db37f483a5e2f57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/shaders/ink_sparkle.frag": "ae6c1fd6f6ee6ee952cde379095a8f3f",
+"canvaskit/canvaskit.js": "2bc454a691c631b07a9307ac4ca47797",
+"canvaskit/canvaskit.wasm": "bf50631470eb967688cca13ee181af62",
+"canvaskit/profiling/canvaskit.js": "38164e5a72bdad0faa4ce740c9b8e564",
+"canvaskit/profiling/canvaskit.wasm": "95a45378b69e77af5ed2bc72b2209b94",
 "favicon.ico": "1983a9e5dc51d44ac6c9c2c60e3baf61",
 "favicon.png": "9742921a852d4818ebfd2f3495766013",
+"flutter.js": "f85e6fb278b0fd20c349186fb46ae36d",
 "icons/Icon-192.png": "3b563806524fd43b1107b750c3c102b6",
 "icons/Icon-512.png": "3b563806524fd43b1107b750c3c102b6",
 "icons/Icon-maskable-192.png": "3b563806524fd43b1107b750c3c102b6",
 "icons/Icon-maskable-512.png": "3b563806524fd43b1107b750c3c102b6",
-"index.html": "ccb3fec44da93438b42b44e5b52e8d02",
-"/": "ccb3fec44da93438b42b44e5b52e8d02",
-"main.dart.js": "ebd9bfe8dc82706c132c2a56cf373675",
+"index.html": "13f162aecea4d7c68081616808e64ac1",
+"/": "13f162aecea4d7c68081616808e64ac1",
+"main.dart.js": "94d8457515f3a4d289c30145e1f445cf",
 "manifest.json": "a052fc08a99c772d81e2370b55397ace",
 "script.js": "8229bb66964edef18ac2c3aa76b43147",
 "version.json": "1c3ba6d973a11603a84deac549304799"
@@ -36,10 +43,8 @@ const RESOURCES = {
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-  "/",
-"main.dart.js",
+  "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
@@ -138,9 +143,11 @@ self.addEventListener("fetch", (event) => {
     .then((cache) =>  {
       return cache.match(event.request).then((response) => {
         // Either respond with the cached resource, or perform a fetch and
-        // lazily populate the cache.
+        // lazily populate the cache only if the resource was successfully fetched.
         return response || fetch(event.request).then((response) => {
-          cache.put(event.request, response.clone());
+          if (response && Boolean(response.ok)) {
+            cache.put(event.request, response.clone());
+          }
           return response;
         });
       })
