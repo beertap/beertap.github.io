@@ -1,11 +1,11 @@
 {
-    "name": "beertap",
-    "short_name": "beertap",
+    "name": "Beertap",
+    "short_name": "Beertap",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#2615d2",
+    "theme_color": "#2615d2",
+    "description": "Beertap",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
